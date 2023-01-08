@@ -25,18 +25,54 @@ using Main.Models;
 
 #region Hashtable
 
-Hashtable datas = new Hashtable();
+//Hashtable datas = new Hashtable();
 
-datas.Add(1, "Ali");
-datas.Add(3, "Elcan");
-datas.Add(2, "Cavid");
+//datas.Add(1, "Ali");
+//datas.Add(3, "Elcan");
+//datas.Add(2, "Cavid");
 
-foreach (DictionaryEntry item in datas)
-{
-    if ((int)item.Key == 1)
-    {
-        Console.WriteLine(item.Value);
-    }
-}
+//foreach (DictionaryEntry item in datas)
+//{
+//    if ((int)item.Key == 1)
+//    {
+//        Console.WriteLine(item.Value);
+//    }
+//}
+
+#endregion
+
+#region Sorted list
+
+//SortedList datas = new SortedList();
+
+//datas.Add(1, "Ali");
+//datas.Add(3, "Elcan");
+//datas.Add(2, "Cavid");
+
+//foreach (DictionaryEntry item in datas)
+//{
+//    Console.WriteLine($"{item.Key}-{item.Value}");
+//}
+
+#endregion
+
+#region Array list
+
+//ArrayList datas = new ArrayList();
+
+//datas.Add("Hello");
+//datas.Add(1);
+//datas.Add(true);
+
+//foreach (var item in datas)
+//{
+//    Console.WriteLine(item);
+//}
+
+#endregion
+
+#region Bit array
+
+
 
 #endregion
