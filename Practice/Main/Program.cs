@@ -1,4 +1,5 @@
-﻿using Main.Models;
+﻿using System.Collections;
+using Main.Models;
 
 #region Operator overloading
 
@@ -22,3 +23,20 @@
 
 #endregion
 
+#region Hashtable
+
+Hashtable datas = new Hashtable();
+
+datas.Add(1, "Ali");
+datas.Add(3, "Elcan");
+datas.Add(2, "Cavid");
+
+foreach (DictionaryEntry item in datas)
+{
+    if ((int)item.Key == 1)
+    {
+        Console.WriteLine(item.Value);
+    }
+}
+
+#endregion
