@@ -16,11 +16,11 @@ namespace Main.Controllers
 
 		public void Show()
 		{
-			var result = _libraryService.FilterByAge(GetAuthors());
+			List<Author> result = _libraryService.FilterByAge(GetAuthors());
 
-			foreach (var item in result)
+			foreach (Author author in result)
 			{
-				Console.WriteLine(item);
+				Console.WriteLine(author);
 			}
         }
 

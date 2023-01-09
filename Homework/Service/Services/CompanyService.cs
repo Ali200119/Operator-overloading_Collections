@@ -8,17 +8,19 @@ namespace Service.Services
     {
         public int Count(List<Employee> employees, DateTime date1, DateTime date2, int salary)
         {
-            int count = 0;
+            return employees.FindAll(e => e.Birthday > date1 && e.Birthday < date2 && e.Salary > salary).Count();
 
-            foreach (Employee employee in employees)
-            {
-                if (employee.Birthday > date1 && employee.Birthday < date2 && employee.Salary > salary)
-                {
-                    count++;
-                }
-            }
+            //int count = 0;
 
-            return count;
+            //foreach (Employee employee in employees)
+            //{
+            //    if (employee.Birthday > date1 && employee.Birthday < date2 && employee.Salary > salary)
+            //    {
+            //        count++;
+            //    }
+            //}
+
+            //return count;
         }
     }
 }

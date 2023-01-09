@@ -8,17 +8,19 @@ namespace Service.Services
     {
         public List<Author> FilterByAge(List<Author> authors)
         {
-            List<Author> newList = new List<Author>();
+            return authors.FindAll(a => a.Age > 40);
 
-            foreach (Author author in authors)
-            {
-                if (author.Age > 40)
-                {
-                    newList.Add(author);
-                }
-            }
+            //List<Author> newList = new List<Author>();
 
-            return newList;
+            //foreach (Author author in authors)
+            //{
+            //    if (author.Age > 40)
+            //    {
+            //        newList.Add(author);
+            //    }
+            //}
+
+            //return newList;
         }
     }
 }
