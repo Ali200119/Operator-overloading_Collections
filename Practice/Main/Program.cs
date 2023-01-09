@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using Main.Models;
 
+#region Non-Generic
+
 #region Operator overloading
 
 //Employee employee1 = new Employee
@@ -71,8 +73,30 @@ using Main.Models;
 
 #endregion
 
-#region Bit array
+#endregion
 
+#region Generic
 
+#region List
+
+//List<int> datas = new List<int>();
+
+//datas.Add(7);
+//datas.Add(30);
+//datas.Add(19);
+
+////datas.Sort();
+////datas.Reverse();
+
+////datas.Sort();
+
+////Console.WriteLine(datas[0]);
+
+//foreach (var item in datas)
+//{
+//    Console.WriteLine(item);
+//}
+
+#endregion
 
 #endregion
